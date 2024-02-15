@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import static org.junit.Assert.assertTrue;
 import java.time.Duration;
 
 public class QuestionsPage {
@@ -34,9 +33,4 @@ public class QuestionsPage {
         if (driver.findElement(sectionAnswer).getText().equals(answer)){resultcheck = true;}
         return resultcheck;
     }
-
-//.//p[text()='Сутки — 400 рублей. Оплата курьеру — наличными или картой.']
-
-
-//         .//div[text()='Сколько это стоит? И как оплатить?']
 }
