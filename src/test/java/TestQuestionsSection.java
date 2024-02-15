@@ -1,3 +1,4 @@
+import BaseTest.MainTest;
 import PagePackage.QuestionsPage;
 import org.junit.After;
 import org.junit.Before;
@@ -33,16 +34,21 @@ public class TestQuestionsSection {
 //        driver.manage().window().maximize();
 //        driver.manage().deleteAllCookies();
 //        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+//        MainTest mainTest = new MainTest("FireFox");
+//        driver = mainTest.createDriver();
 //    }
 
     @Before
 //    Открытие браузера Google Chrome
     public void launchGoogleChrome(){
-        System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\bin\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
-        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+//        System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\bin\\chromedriver.exe");
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        driver.manage().deleteAllCookies();
+//        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+        MainTest mainTest = new MainTest("Chrome");
+        driver = mainTest.createDriver();
+
     }
 
 
